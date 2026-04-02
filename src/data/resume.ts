@@ -54,8 +54,8 @@ export const siteSettings = {
     zh: "黎润华",
     en: "Richard",
   },
-  role: t("软件开发工程师", "Product Engineer / Digital Storyteller"),
-  location: t("中国上海 · 可远程协作", "Shanghai, China · Remote-friendly"),
+  role: t("软件开发工程师", "Software Engineer"),
+  location: t("中国上海 · 可远程协作", "Shanghai, China · Available for remote collaboration"),
   email: "undercurre@163.com",
   phone: "+86 159-1360-9821",
   website: "",
@@ -63,15 +63,15 @@ export const siteSettings = {
   linkedin: "",
   subtitle: t(
     "AI 时代的技术与商业追逐者，迎接新时代的新生。",
-    "I ship digital products and brand experiences with clear storytelling, careful performance, and a complete delivery mindset."
+    "A technologist and business builder in the age of AI, embracing what this new era can make possible."
   ),
   description: t(
     "一个适合国内外访问的双语电子简历模板，强调个人品牌、项目表达和 Vercel 部署友好性。",
-    "A bilingual online resume starter built for global access, personal branding, project storytelling, and Vercel-friendly deployment."
+    "A bilingual online resume built for audiences in China and abroad, with an emphasis on personal branding, project storytelling, and Vercel-friendly deployment."
   ),
   availability: t(
     "2026 年参与国内AI相关软硬件开发，正在打造跨时代的AI产品。",
-    "Open to selected remote roles and freelance projects in 2026."
+    "In 2026, I am focused on AI-related software and hardware development in China and on building next-generation AI products."
   ),
 } as const;
 
@@ -81,7 +81,7 @@ export const publicLinkedin = clean(siteSettings.linkedin);
 
 const resumeSource = {
   ui: {
-    metaTitle: t("电子简历", "Global Resume"),
+    metaTitle: t("电子简历", "Online Resume"),
     metaKeywords: [
       "online resume",
       "personal site",
@@ -89,12 +89,12 @@ const resumeSource = {
       "vercel cloudflare",
       "bilingual portfolio",
     ],
-    brandKicker: t("个人电子简历", "Bilingual Resume"),
+    brandKicker: t("复合型产品工程履历", "A Multidisciplinary Product Engineering Profile"),
     brandIntro: t(
-      "国内外访问、兼顾个人品牌与AI机器可读性",
-      "An online resume starter shaped for global reach, strong personal branding, and machine-readable resume output."
+      "给懂行的招聘者与合作方看：这不是经历堆砌，而是产品判断、工程落地、商业意识与产业资源的集中表达。",
+      "Built for experienced hiring managers and operators: not a stack of credentials, but a concentrated view of product judgment, technical execution, commercial sense, and industrial leverage."
     ),
-    heroKicker: t("个人定位", "Positioning"),
+    heroKicker: t("个人定位", "Profile"),
     navigation: [
       { href: "#experience", label: t("经历", "Experience") },
       { href: "#projects", label: t("项目", "Projects") },
@@ -103,53 +103,53 @@ const resumeSource = {
     ],
     languageLabel: t("语言", "Language"),
     actions: {
-      primary: t("联系我", "Start a conversation"),
+      primary: t("联系我", "Get in Touch"),
       secondary: t("查看 JSON 简历", "View JSON Resume"),
     },
     availability: {
-      kicker: t("当前状态", "Availability"),
-      badge: t("目前", "Currently"),
+      kicker: t("当前状态", "Current Status"),
+      badge: t("目前", "Now"),
     },
     infoRows: {
-      base: t("所在地", "Base"),
+      base: t("所在地", "Location"),
       email: t("邮箱", "Email"),
       focus: t("关注方向", "Focus"),
       focusValue: t(
         "AI Agent、软硬件结合、AIOT、混合开发",
-        "Personal branding, landing pages, product storytelling, and polished launch delivery"
+        "AI agents, software-hardware integration, AIoT, and hybrid development"
       ),
     },
     stackRadar: {
-      kicker: t("技术雷达", "Stack radar"),
+      kicker: t("技术雷达", "Technology Radar"),
     },
     sections: {
       experience: {
         kicker: t("经历", "Experience"),
-        title: t("把设计、工程与商业连接起来", "Connecting strategy, design, and delivery"),
+        title: t("在哪里？我做过什么？", "Where I've Worked and What I've Built"),
         description: t(
           "用户第一，把产品设计做好；精益求精，尽全力把技术做好；负责到底，落地商业目标。",
-          "The content below is placeholder data. Edit `src/data/resume.ts` once, and the whole site updates with it."
+          "Put users first and get the product right. Pursue technical excellence with discipline. Stay accountable through delivery and turn the work into business results."
         ),
       },
       projects: {
         kicker: t("项目", "Projects"),
-        title: t("", "Selected work and how it is framed"),
+        title: t("", ""),
         description: t(
           "",
-          "A resume site should not feel like a dump of facts. It should read like a concise statement of your work."
+          ""
         ),
       },
       capabilities: {
         kicker: t("能力", "Capabilities"),
-        title: t("全能多面手 + 主观能动性", "Not just building pages, but delivering the whole experience"),
+        title: t("我可以为你做什么？", "What I Can Do for You"),
         description: t(
           "从产品设计到项目落地就是一条完整交付链路，主动在这条路上寻求突破和结果 ",
-          "From visual direction and information hierarchy to deployment, this template is designed around an end-to-end delivery workflow."
+          "From product design to project delivery, I see the whole journey as one continuous delivery chain, and I stay proactive in pushing for breakthroughs and results along the way."
         ),
       },
       contact: {
         kicker: t("联系", "Contact"),
-        title: t("如果有兴趣就联系我吧", "Ready to turn this starter into your own site"),
+        title: t("如果有兴趣就联系我吧", "If You're Interested, Let's Talk"),
         description: t(
           "",
           ""
@@ -163,37 +163,37 @@ const resumeSource = {
     },
     footer: t(
       "",
-      "Built for fast customization, SEO readiness, and Vercel + Cloudflare deployment."
+      ""
     ),
   },
   profile: {
     summary: t(
       "我擅长把复杂信息整理成易读、可信、能打动人的数字表达。从产品设计到前端实现，再到服务搭建、上线部署和性能治理，并行 AI，提效创新，我更关注“如何让技术落地，赋能商业”。",
-      "I turn complex information into digital experiences that feel readable, credible, and memorable. From product thinking and frontend implementation to launch readiness and performance, I care about the full experience people actually feel."
+      "I am good at turning complex information into digital experiences that are clear, credible, and persuasive. From product design and frontend implementation to service setup, launch, and performance optimization, and increasingly with AI to improve efficiency and unlock new possibilities, I care most about how technology lands in the real world and creates business value."
     ),
     metrics: [
       {
         value: "5+",
-        label: t("年 Web 产品经验", "Years building web products"),
+        label: t("年 Web 产品经验", "Years of Web Product Experience"),
         detail: t(
           "从品牌官网到 SaaS 控制台，都能独立推进到上线。",
-          "From brand sites to SaaS dashboards, I can drive work from concept to launch."
+          "From branded websites to SaaS dashboards, I can independently drive work all the way through launch."
         ),
       },
       {
         value: "20+",
-        label: t("个已上线项目", "Launches shipped"),
+        label: t("个已上线项目", "Projects Launched"),
         detail: t(
           "覆盖企业站、活动页、内容中心、产品增长页、IOT中台、品牌APP、AI Agent等项目。",
-          "Across company websites, campaign pages, content hubs, and product growth surfaces."
+          "Across corporate websites, campaign pages, content hubs, product-growth pages, IoT platforms, branded apps, AI agents, and more."
         ),
       },
       {
         value: "3",
-        label: t("种协作模式", "Working modes"),
+        label: t("种协作模式", "Collaboration Models"),
         detail: t(
           "独立交付、嵌入团队协作、短周期顾问式支持。",
-          "Independent delivery, embedded team collaboration, and short consulting sprints."
+          "Independent delivery, embedded team collaboration, and short-cycle advisory support."
         ),
       },
     ],
@@ -201,84 +201,95 @@ const resumeSource = {
   experience: [
     {
       period: t("2026 — 至今", "2026 — Now"),
-      role: t("AI开发工程师", "Lead Frontend Engineer"),
+      role: t("AI开发工程师", "AI Engineer"),
       company: "",
       description: t(
         "负责面向全球市场的品牌站、AI 产品与可持续迭代的系统。",
-        "Led brand experiences for global audiences, AI product surfaces, and a design system built for sustainable iteration."
+        "Responsible for global-facing brand sites, AI products, and systems designed for continuous iteration."
       ),
       points: [
         t(
           "AI Agent以及相关前沿探索性工程",
-          "Built a reusable page module system so marketing and design could expand new pages with a shared component language."
+          "AI agents and related frontier exploratory engineering."
         ),
         t(
           "AI 消费级硬件产品设计",
-          "Turned Lighthouse performance, SEO, and accessibility into launch criteria to reduce late-stage rework."
+          "AI consumer hardware product design."
         ),
       ],
     },
     {
       period: t("2024 — 2026", "2024 — 2026"),
-      role: t("IOT前端负责人", "Interactive Designer → Frontend Engineer"),
+      role: t("IOT前端负责人", "IoT Frontend Lead"),
       company: "Dreame",
       description: t(
         "负责协调品牌IOT需求落地，协调供应商和各模块资源实现产品智能化。",
-        "Started from visual storytelling and moved into engineering, building a lasting sensitivity to detail and interaction rhythm."
+        "Led the implementation of brand IoT initiatives, coordinating suppliers and cross-functional resources to drive product intelligence."
       ),
       points: [
         t(
           "设计IOT中台，提供智能化能力给品类业务单元",
-          "Worked on campaign pages, editorial features, and brand refreshes, building strong narrative UI instincts."
+          "Designed an IoT platform to provide intelligent capabilities to business units."
         ),
         t(
           "预研AI方案，赋能各业务单元",
-          "Translated design output into maintainable frontend modules with better consistency and delivery speed."
+          "Researched AI solutions to empower different business units."
         ),
       ],
     },
     {
       period: t("2021 — 2024", "2021 — 2024"),
-      role: t("软件开发工程师", "Senior Product Engineer"),
+      role: t("软件开发工程师", "Software Engineer"),
       company: "Midea",
       description: t(
         "美的集团IOT先行研究项目-软件开发工程师",
-        "Shipped growth pages, dashboards, and merchant tooling for cross-border commerce and B2B brands."
+        "Software Engineer for Midea Group's advanced IoT research program."
       ),
       points: [
         t(
           "跨事业部沟通",
-          "Unified marketing surfaces and in-product experiences within the same design language."
+          "Cross-business-unit coordination."
         ),
         t(
           "公共基建开发",
-          "Moved the frontend architecture toward stronger typing and component layering, speeding up feature delivery."
+          "Shared infrastructure development."
         ),
         t(
           "前沿技术探索",
-          "Worked with content, brand, and growth teams to frame product value clearly instead of piling on feature lists."
+          "Exploration of emerging technologies."
         ),
       ],
     },
   ],
   projects: [
     {
+      title: t("AI Agent 工作流与 OpenClaw 能力体系", "AI Agent Workflow and OpenClaw Capability Framework"),
+      subtitle: t("围绕 OpenClaw、Skill、MCP 的智能体工程", "AI agent engineering centered on OpenClaw, Skills, and MCP"),
+      description: t(
+        "围绕 OpenClaw 这类新一代智能体协作方式，持续搭建并迭代可复用的 Skill 体系、MCP 工具接入和任务编排流程，把提示词设计、上下文管理、工具调用、输出结构化和多步骤执行沉淀成一套可持续扩展的 AI Agent 生产力框架，服务于代码生成、文档整理、信息抽取、自动化操作和复杂任务拆解。",
+        "Centered on new collaborative agent patterns such as OpenClaw, I continuously built and iterated reusable Skill systems, MCP tool integrations, and task orchestration flows, turning prompt design, context management, tool invocation, structured output, and multi-step execution into an extensible AI agent productivity framework for code generation, documentation, information extraction, automation, and complex task decomposition."
+      ),
+      stack: ["OpenClaw", "Skills", "MCP", "Tool Calling", "Agent Workflow", "Structured Output"],
+      href: "",
+      hrefLabel: same(""),
+    },
+    {
       title: t("MOVA-IoT 后台管理系统", "MOVA IoT Admin Console"),
-      subtitle: t("追觅 IoT 管理后台与交付推进", "IoT operations console and delivery leadership"),
+      subtitle: t("追觅 IoT 管理后台与交付推进", "Dreame IoT admin console and delivery execution"),
       description: t(
         "参与 IoT 研究院的服务架构设计和系统搭建，负责前端组开发进度把控、调度和难点攻坚，承接多业务单元的需求开发与进度管理，支撑设备服务、用户服务、日志监控、二维码交互和 RPC 协议协同落地。",
-        "Contributed to the IoT institute's service architecture and system setup, leading frontend execution, scheduling, and hard-problem solving across multiple business units while supporting device services, user services, log monitoring, QR workflows, and RPC coordination."
+        "Participated in the architecture design and system build-out of the IoT research institute, taking ownership of frontend planning, coordination, and issue resolution. I also managed requirement delivery and schedules across multiple business units, supporting device services, user services, log monitoring, QR-code interactions, and RPC protocol implementation."
       ),
       stack: ["Vue", "TypeScript", "IoT Platform", "Project Delivery", "RPC"],
       href: "https://zhicv.cn/glAJYb",
-      hrefLabel: t("图文作品集", "Portfolio"),
+      hrefLabel: same(""),
     },
     {
       title: t("边缘网关控制系统", "Edge Gateway Control System"),
-      subtitle: t("脱网可用的局域网设备控制", "Offline-capable local device control"),
+      subtitle: t("脱网可用的局域网设备控制", "LAN device control that remains available offline"),
       description: t(
         "使用 NestJS + Vue 实现脱网控制系统，让边缘网关在联网与断网之间无缝连接本地化资源，完成周边智能设备的控制、鉴权与局域网内联动，满足复杂 IoT 场景下的稳定可用性要求。",
-        "Built an offline-first control system with NestJS and Vue so an edge gateway could switch seamlessly between online and offline states, enabling local resource access, device control, authentication, and orchestration across nearby smart devices."
+        "Built an offline control system with NestJS and Vue that allowed an edge gateway to switch seamlessly between online and offline states while continuing to use localized resources for device control, authentication, and LAN orchestration across nearby smart devices."
       ),
       stack: ["Vue", "NestJS", "Edge Gateway", "Offline-first", "LAN"],
       href: "",
@@ -289,18 +300,18 @@ const resumeSource = {
       subtitle: t("园区级数字孪生与场景编排", "Campus-scale digital twin and scene orchestration"),
       description: t(
         "负责基于 Vue 的 PC Web 前端与微信小程序场景模块开发，实现项目列表渲染、ECharts 地图与统计、Three.js WebGL 数字孪生，以及数千设备的集控、场景构建、权限分配、空间归属划分和拓扑分析。",
-        "Developed the Vue-based web console and WeChat Mini Program scene modules, delivering ECharts maps and analytics, a Three.js WebGL digital twin, large-scale device orchestration, scene building, permission modeling, spatial assignment, and topology analysis."
+        "Developed the Vue-based PC web frontend and WeChat Mini Program scene modules, including project list rendering, ECharts maps and analytics, a Three.js/WebGL digital twin, and orchestration for thousands of devices, scene creation, permission assignment, spatial ownership, and topology analysis."
       ),
       stack: ["Vue", "ECharts", "Three.js", "WeChat Mini Program", "Digital Twin"],
       href: "",
       hrefLabel: same(""),
     },
     {
-      title: t("美的美居 App / Lite / 智慧屏", "Midea M-Smart App Suite"),
+      title: t("美的美居 App / Lite / 智慧屏", "Midea SmartHome App / Lite / Smart Screen"),
       subtitle: t("多端设备控制与插件交付", "Cross-platform device control and plugin delivery"),
       description: t(
         "覆盖 Hybrid 与 Flutter 两套技术路线，对接不同品类和型号的物模型技术文档，梳理模型差异，完成数据适配层与 UI 组件库开发，实现设备实时监听、控制和插件交付，覆盖灯具、体脂秤、网关及其子设备等多类产品。",
-        "Delivered cross-platform control surfaces across Hybrid and Flutter stacks, normalized device-model differences across product lines, and built the data adaptation layer plus UI component library for real-time monitoring, control, and plugin delivery across lighting products, scales, gateways, and related sub-devices."
+        "Worked across both Hybrid and Flutter stacks, integrated device-model documentation across categories and models, sorted out model differences, and built the data adaptation layer and UI component library to support real-time monitoring, control, and plugin delivery for lighting products, body-composition scales, gateways, and related sub-devices."
       ),
       stack: ["Flutter", "Hybrid", "IoT Plugins", "Device Modeling", "UI Kit"],
       href: "",
@@ -309,24 +320,24 @@ const resumeSource = {
   ],
   capabilities: [
     {
-      title: t("构建", "Build"),
+      title: t("全栈交付", "Full-stack Delivery"),
       body: t(
-        "我会把产品方向、信息架构、交互路径和工程实现连成一条线来推进。常用 Next.js App Router、React 19、TypeScript、Tailwind CSS 与 Motion 来完成从原型到上线的全过程，也会结合 AI 工作流提升设计、开发和交付效率。",
-        "I connect product direction, information architecture, interaction design, and engineering into one delivery flow. My core toolkit includes Next.js App Router, React 19, TypeScript, Tailwind CSS, and Motion, and I also use AI workflows to speed up design, development, and launch."
+        "我是一个能够从 0 到 1 推进项目的人，既能做产品设计、信息架构、交互体验，也能完成前端、后端、AI 工作流、部署上线和后续迭代。无论是官网、App、IoT 控制台、AI Agent 还是软硬件结合的数字产品，我都能把“想法”真正落成可用、可上线、可持续维护的系统，而不是只交一个页面或者一个 Demo。",
+        "I am a builder who can carry a project from zero to launch. I cover product design, information architecture, interaction design, frontend, backend, AI workflows, deployment, and ongoing iteration. Whether it is a website, app, IoT console, AI agent, or a hardware-software product, I turn ideas into systems that are usable, launch-ready, and maintainable instead of stopping at a demo or a UI mockup."
       ),
     },
     {
-      title: t("设计", "Design"),
+      title: t("商业与创业", "Business and Entrepreneurial Thinking"),
       body: t(
-        "我更关注页面如何表达价值，而不只是把信息堆上去。无论是品牌感、编辑感、落地页叙事、设计令牌还是可访问性交互，我都会围绕“用户是否看得懂、记得住、愿意继续行动”来组织内容与视觉节奏。",
-        "I care less about stacking information and more about expressing value clearly. Whether the task is editorial art direction, landing-page storytelling, design tokens, or accessible interactions, I shape the content and visual rhythm around what users can understand, remember, and act on."
+        "我不把自己只定位成工程师，也会站在创业者和经营者的视角思考问题。做产品时，我会同时考虑用户价值、差异化、成本结构、交付效率、增长路径和商业闭环，知道什么该快速验证、什么该长期投入，能帮助团队在资源有限的时候先打出结果，再逐步建立壁垒。",
+        "I do not define myself only as an engineer. I also think from the perspective of a founder and an operator. When building products, I consider user value, differentiation, cost structure, delivery efficiency, growth paths, and commercial loops at the same time. I know what should be validated quickly, what deserves long-term investment, and how to help a team produce results first before gradually building stronger moats."
       ),
     },
     {
-      title: t("交付", "Operate"),
+      title: t("行业资源", "Industry Network and Supply Chain Resources"),
       body: t(
-        "我能把最后一公里一起做完，包括 Vercel 部署、Cloudflare DNS 与代理策略、性能预算、SEO 与元信息，以及跨团队联调和上线协作。对我来说，交付不是页面写完，而是结果真的稳定可访问、可传播、可持续维护。",
-        "I also take ownership of the last mile: Vercel deployment, Cloudflare DNS and proxy strategy, performance budgets, SEO metadata, and cross-team launch coordination. To me, delivery is not just finishing the page, but making sure the result is stable, reachable, shareable, and maintainable."
+        "我在中国软硬件行业打拼多年，长期接触消费电子、IoT、供应链、制造和渠道相关团队，除了写代码，也理解产品从研发到落地再到量产协同的真实约束。这让我不仅能解决技术问题，也更容易调动合适的人脉、行业经验和供应链资源，帮助项目更快进入可执行状态。",
+        "After years in China’s software and hardware industries, I have built long-term exposure to consumer electronics, IoT, supply chains, manufacturing, and channel-side collaboration. That means I do more than solve technical problems: I also understand the real constraints from R&D to implementation to scaled delivery, and I can often connect the right people, industry experience, and supply-chain resources to move a project into execution faster."
       ),
     },
   ],
@@ -354,31 +365,31 @@ const resumeSource = {
   ] satisfies readonly LocalizedLink[],
   stackRadar: [
     {
-      name: "产品设计和前端工程",
+      name: t("产品设计和前端工程", "Product Design and Frontend Engineering"),
       note: t(
         "AARRR、MVP、MCP、Vue、React、Flutter、Nextjs、Android、IOS、Shopify、PhotoShop、Pencil、Figma",
-        "AARRR、MVP、MCP、Vue、React、Flutter、Nextjs、Android、IOS、Shopify、PhotoShop、Pencil、Figma"
+        "AARRR, MVP, MCP, Vue, React, Flutter, Next.js, Android, iOS, Shopify, Photoshop, Pencil, and Figma"
       ),
     },
     {
-      name: "后端工程和系统运维",
+      name: t("后端工程和系统运维", "Backend Engineering and Systems Operations"),
       note: t(
         "Go、Java、Python、Nodejs、Kubernetes",
-        "Go、Java、Python、Nodejs、Kubernetes"
+        "Go, Java, Python, Node.js, and Kubernetes"
       ),
     },
     {
-      name: "AI Agent",
+      name: t("AI Agent", "AI Agents"),
       note: t(
         "openclaw、skill、mcp、TTS、Nano Banana、Seedance",
-        "openclaw、skill、mcp、TTS、Nano Banana、Seedance"
+        "OpenClaw, Skills, MCP, TTS, Nano Banana, and Seedance"
       ),
     },
     {
-      name: "嵌入式和供应链",
+      name: t("嵌入式和供应链", "Embedded Systems and Supply Chain"),
       note: t(
         "Espressif、Midea、Tuya",
-        "Espressif、Midea、Tuya"
+        "Espressif, Midea, and Tuya"
       ),
     },
   ],
@@ -517,7 +528,7 @@ export function getResumeContent(locale: Locale) {
       .filter((item) => hasValue(item.href) && hasAnyValue(item.label, item.display)),
     stackRadar: resumeSource.stackRadar
       .map((item) => ({
-        name: clean(item.name),
+        name: clean(pick(item.name, locale)),
         note: clean(pick(item.note, locale)),
       }))
       .filter((item) => hasAnyValue(item.name, item.note)),
