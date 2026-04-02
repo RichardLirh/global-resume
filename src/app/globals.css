@@ -1,26 +1,138 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --background: #f6f0e5;
+  --foreground: #182231;
+  --foreground-soft: #405066;
+  --muted: #6e7b8e;
+  --card: rgba(255, 252, 247, 0.78);
+  --card-strong: rgba(255, 248, 238, 0.92);
+  --surface: rgba(242, 232, 219, 0.7);
+  --border: rgba(24, 34, 49, 0.1);
+  --border-strong: rgba(24, 34, 49, 0.18);
+  --accent: #aa6533;
+  --accent-strong: #8b4a1d;
+  --accent-soft: rgba(170, 101, 51, 0.12);
+  --inverse-foreground: #fffaf2;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-soft: var(--foreground-soft);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-card-strong: var(--card-strong);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-inverse-foreground: var(--inverse-foreground);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
+  min-height: 100vh;
+  background-color: var(--background);
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-sans),
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    sans-serif;
+  background-image:
+    radial-gradient(circle at top left, rgba(163, 193, 214, 0.45), transparent 28%),
+    radial-gradient(circle at top right, rgba(221, 180, 128, 0.22), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0)),
+    linear-gradient(160deg, #fbf7f0 0%, #f6efe3 42%, #efe4d3 100%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.24;
+  background-image:
+    linear-gradient(rgba(24, 34, 49, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(24, 34, 49, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(circle at center, black 48%, transparent 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(170, 101, 51, 0.22);
+  color: var(--foreground);
+}
+
+.section-frame {
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 249, 242, 0.65)),
+    var(--card);
+  box-shadow:
+    0 20px 60px rgba(128, 96, 58, 0.12),
+    0 4px 20px rgba(32, 46, 68, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+}
+
+.fine-grid {
+  position: relative;
+}
+
+.fine-grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(24, 34, 49, 0.06) 40%, transparent 100%);
+  opacity: 0.28;
+}
+
+.kicker {
+  font-family:
+    var(--font-mono),
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.paper-tint {
+  background: linear-gradient(180deg, rgba(255, 252, 247, 0.88), rgba(245, 237, 225, 0.72));
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
