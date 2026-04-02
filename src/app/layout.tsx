@@ -46,8 +46,8 @@ export const metadata: Metadata = {
         alternates: {
           canonical: "/",
           languages: {
-            "zh-CN": "/",
-            "en-US": "/?lang=en",
+            "en-US": "/",
+            "zh-CN": "/?lang=zh",
           },
         },
       }
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: defaultContent.siteConfig.description,
     siteName: `${siteSettings.names.en} Resume`,
     type: "website",
-    locale: "zh_CN",
+    locale: "en_US",
     ...(publicWebsite ? { url: publicWebsite } : {}),
   },
   twitter: {
@@ -74,7 +74,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="zh-CN"
+      lang="en-US"
       className={`${manrope.variable} ${cormorant.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

@@ -30,10 +30,10 @@ const toKeywords = (value: string) =>
     .map(clean)
     .filter(hasValue);
 
-export const defaultLocale: Locale = "zh";
+export const defaultLocale: Locale = "en";
 
 export function resolveLocale(input?: string | null): Locale {
-  return input === "en" ? "en" : defaultLocale;
+  return input === "zh" || input === "en" ? input : defaultLocale;
 }
 
 export const localeOptions = [
